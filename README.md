@@ -12,6 +12,7 @@ fiqa-ai-engineering/
 ├── src/
 │   ├── ingestion/
 │   │   └── embed.py
+|   |   └── index_bm25.py
 │   │
 │   ├── retrieval/
 │   │   ├── dense.py

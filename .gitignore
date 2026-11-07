@@ -48,6 +48,7 @@ Thumbs.db
 data/raw/
 data/processed/
 !data/.gitkeep
+indexes/fiqa_bm25
 
 # ==========================================
 # ML Models / Artifacts
