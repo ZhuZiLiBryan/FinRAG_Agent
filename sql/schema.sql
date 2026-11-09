@@ -1,0 +1,8 @@
+CREATE EXTENSION IF NOT EXISTS vector;
+
+CREATE TABLE IF NOT EXISTS documents (
+    id TEXT PRIMARY KEY,
+    title TEXT,
+    content TEXT NOT NULL,
+    embedding VECTOR(256) NOT NULL
+);
