@@ -64,7 +64,7 @@ def connect_db():
 
 
 def embed_documents(documents: list[str], embedding_model: SentenceTransformer) -> np.ndarray:
-    # Load sentence transformer model; use GPU if exists for speed
+    # Load sentence transformer model
     print(f"Generating embeddings for {len(documents)} documents...")
     embeddings = embedding_model.encode(
         documents,
