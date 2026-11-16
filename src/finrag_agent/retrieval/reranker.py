@@ -5,6 +5,8 @@ to make the most of it :)
 """
 from sentence_transformers import CrossEncoder
 
+# Consider `bge-reranker-v2-m3` or `ms-marco-MiniLM-L-6-v2`
+
 def rerank_docs(query: str, docs: list[tuple[str, float]]) -> list[tuple[str, float]]:
     pass
 
