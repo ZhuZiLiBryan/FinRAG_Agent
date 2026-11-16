@@ -8,7 +8,6 @@ from dotenv import load_dotenv
 from sentence_transformers import SentenceTransformer
 import psycopg
 from pgvector.psycopg import register_vector
-import pandas as pd
 import numpy as np
 import torch
 
@@ -30,7 +29,6 @@ class DenseRetriever:
         conn = psycopg.connect(os.environ["DATABASE_URL"])
         register_vector(conn)
         return conn
-
 
     def embed_query(self, query: str) -> np.ndarray:
         print(f"Generating embeddings for query...") 
