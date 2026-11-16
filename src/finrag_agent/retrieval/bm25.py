@@ -10,7 +10,7 @@ class SparseRetriever():
     def __init__(self, index_dir = INDEX_DIR):
         self.index_directory = index_dir
 
-    def search_bm25(self, query: str, k: int = 10) -> list[tuple[str, float]]:
+    def retrieve(self, query: str, k: int = 10) -> list[tuple[str, float]]:
         """
         Retrieve top k results from BM25 search as (doc_id, score)
         """
